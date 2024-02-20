@@ -9,7 +9,7 @@ Created on Mon Jul  6 23:45:35 2020
 
 import csv
 l=[]
-with open('DataClean.csv', 'r',errors="ignore") as file:
+with open('addresses.csv', 'r',errors="ignore") as file:
     reader = csv.reader(file)
     for row in reader:
         if(row):
