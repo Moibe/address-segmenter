@@ -30,7 +30,7 @@ with open('cities.csv', 'r',errors="ignore") as file:
             n.append(row)
             
 o=[]
-with open('States.csv', 'r',errors="ignore") as file:
+with open('states.csv', 'r',errors="ignore") as file:
     reader = csv.reader(file)
     for row in reader:
         if(row):
