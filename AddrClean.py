@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jul  6 23:45:35 2020
-
 @author: mak
 """
 
-
 import csv
+import time
+
 l=[]
 with open('addresses.csv', 'r',errors="ignore") as file:
     reader = csv.reader(file)
@@ -39,11 +39,6 @@ with open('states.csv', 'r',errors="ignore") as file:
 
 #---------------------------------------------------
             
-#---------------------------------------------------
-            
-#---------------------------------------------------
-            
-
 count = 0
 lstCheck = []
 for j in l:
@@ -87,7 +82,6 @@ for j in l:
             temp = ''
     if flag == True:
         state = 'not found'
-    
     
     lstCheck.append([j[0],con,city,state])
 
